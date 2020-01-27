@@ -1,27 +1,26 @@
 package com.lambton;
-
-
-
 public class Arithmetic
 {
     private int a=0;
     private int b=0;
     private int c=0;
+    private float c1;
+    private int Sum1=0
     private int Sum=0;
-    private String s1,s2,s3,s4,s5;
-    private float f1,f2,f3;
-    private double d1,d2,d3;
+    private String s1,s2,s3,s4,s5,c8;
+    private float f1,f2,final3,FinalFInt,c7;
+    private double d1,d2,d3,c9;
     public Arithmetic(int a, int b, int c) {
         this.a = a;
         this.b = b;
         this.c = c;
-        add(this.a,this.b,this.c);
+        Sum1=add(this.a,this.b,this.c);
     }
     public Arithmetic(int a, int b, float c) {
         this.a = a;
         this.b = b;
         this.f1 = c;
-        add(this.a,this.b,this.f1);
+       FinalfInt= add(this.a,this.b,this.f1);
     }
 
 
@@ -29,13 +28,12 @@ public class Arithmetic
         this.a = a;
         this.b = b;
         Sum =add(this.a,this.b);
-        System.out.println(Sum);
     }
 
     public Arithmetic(float f1, float f2) {
         this.f1 = f1;
         this.f2 = f2;
-        f3=add(this.f1,this.f2);
+        final3=add(this.f1,this.f2);
     }
 
     public Arithmetic(String s1, String s2) {
@@ -81,13 +79,13 @@ public class Arithmetic
         String s4 = String.valueOf(s1).concat(s2);
         return  s4;
     }
-    public int add(int x, int y, int z) {
-        int c = x + y + z;
-        return c;
-    }
+   // public int add(int x, int y, int z) {
+     //    c1 = x + y + z;
+       // return c1;
+    //}
     public float add(int x, int y, float z) {
-        float c = x + y + z;
-        return c;
+         c1 = x + y + z;
+        return c1;
     }
 
     public Arithmetic(int a, double d1) {
@@ -115,20 +113,36 @@ public class Arithmetic
         return c;
     }
     public float add(float x, int y, int z) {
-        float c = x + y + z;
-        return c;
+        c7= x + y + z;
+        return c7;
     }
     public String add(String x, int y, float z) {
-        String c = x.concat(String.valueOf(y)).concat(String.valueOf(z));
-        return c;
+        c8 = x.concat(String.valueOf(y)).concat(String.valueOf(z));
+        return c8;
     }
     public double add(int x, double y) {
-        double c = x + y;
-        return c;
+         c9 = x + y;
+        return c9;
     }
     public float add(int x, float y) {
         float c = x + y;
         return c;
     }
-    
+    Public void printData()
+{
+    System.out.println("Two Integers Sum:   " Sum);
+        System.out.println("Three Integers Sum:   " Sum1);
+    System.out.println("Two Integers and one Flot Sum:   " FinalfInt);
+    System.out.println("Two Floats Sum:   " final3);
+    System.out.println("Two Strings Sum:   " s3);
+    System.out.println("One String one Int Sum:   " s5);
+    System.out.println("one Int one String Sum:   " s6);
+    System.out.println("Three Float Sum:   " c3);
+    System.out.println("one Int one Double Sum:   " s6);
+    System.out.println("one Int one String one float Sum:   " c8);
+    System.out.println("one Int one Double Sum:   " c9);
+
+}
+
+
 }
