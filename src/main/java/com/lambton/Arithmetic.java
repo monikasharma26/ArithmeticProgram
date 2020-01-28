@@ -15,12 +15,14 @@ public class Arithmetic
         this.b = b;
         this.c = c;
         Sum1=add(this.a,this.b,this.c);
+        System.out.println("Three Integers Sum:   " Sum1);
     }
     public Arithmetic(int a, int b, float c) {
         this.a = a;
         this.b = b;
         this.f1 = c;
        FinalfInt= add(this.a,this.b,this.f1);
+        System.out.println("Two Integers and one Flot Sum:   " FinalfInt);
     }
 
 
@@ -28,30 +30,35 @@ public class Arithmetic
         this.a = a;
         this.b = b;
         Sum =add(this.a,this.b);
+        System.out.println("Two Integers Sum:   " Sum);
     }
 
     public Arithmetic(float f1, float f2) {
         this.f1 = f1;
         this.f2 = f2;
         final3=add(this.f1,this.f2);
+        System.out.println("Two Floats Sum:   " final3);
     }
 
     public Arithmetic(String s1, String s2) {
         this.s1 = s1;
         this.s2 = s2;
         s3=add(this.s1,this.s2);
+        System.out.println("Two Strings Sum:   " s3);
     }
 
     public Arithmetic(int a, String s1) {
         this.a = a;
         this.s1 = s1;
        s4= add(this.a,this.s1);
+        System.out.println("one Int one String Sum:   " s4);
     }
     public Arithmetic(String a, int s1)
     {
         this.s1 = a;
         this.a = s1;
        s5= add(this.s1,this.a);
+        System.out.println("One String one Int Sum:   " s5);
     }
 
     public int add(int a1, int a2)
@@ -128,21 +135,7 @@ public class Arithmetic
         float c = x + y;
         return c;
     }
-    Public void printData()
-{
-    System.out.println("Two Integers Sum:   " Sum);
-        System.out.println("Three Integers Sum:   " Sum1);
-    System.out.println("Two Integers and one Flot Sum:   " FinalfInt);
-    System.out.println("Two Floats Sum:   " final3);
-    System.out.println("Two Strings Sum:   " s3);
-    System.out.println("One String one Int Sum:   " s5);
-    System.out.println("one Int one String Sum:   " s6);
-    System.out.println("Three Float Sum:   " c3);
-    System.out.println("one Int one Double Sum:   " s6);
-    System.out.println("one Int one String one float Sum:   " c8);
-    System.out.println("one Int one Double Sum:   " c9);
-
-}
+   
 
 
 }
